@@ -108,7 +108,7 @@
                     <div class="col-md-12">
                         <div class="header">
                             <h4 class="title" style="margin-top:0">
-                                Offers <div class="pull-right"><a href="" id="createOffer">Create an offer</a></div>
+                                Campaigns <div class="pull-right"><a href="" id="createOffer">Create an offer</a></div>
                             </h4>
                         </div>
                     </div>                  
