@@ -103,7 +103,7 @@ iframe{border:none;transition:all linear 0.45s;}
 
 input.search {color: #000; font-size: 15px; padding: 0 5px; border-radius: 4px; width: 242px;border:1px solid #dddddd}
 input.search1 {color: #000; font-size: 15px; padding: 0 5px; border-radius: 4px; width: 242px;border:1px solid #dddddd}
-.card{margin-bottom: 15px; background:#ffffff}
+.card{margin-bottom: 25px; background:#ffffff}
 .contentEditor{width: 70%;float: left;}
 .contentEditor .title{margin-top: 0}
 .rightSidebar{width: 30%;float: right;height: 100%;background:#DFE0E1}
@@ -147,12 +147,18 @@ div#zclip-ZeroClipboardMovie_1{bottom:0 !important}
 
 
 /*----------------------DASHBOARD--------------------*/
+/*.statsWrap .col-md-3 .card{margin-bottom: 25px}*/
+hr{margin-top: 0}
 .subHeading{font-size: 16px;text-align: center;line-height: 20px}
 .campTitle{padding-bottom: 15px}
 .card .statistics {text-align: center; font-size: 2.5em; color: #757474; font-weight: 300}
-.topPerformingCampaignWrap{padding-top: 15px}
+.topPerformingCampaignWrap{padding: 15px 15px 0px 15px}
 .topPerformingCampaignWrap .card{padding: 10px}
 .topPerformingCampaignWrap .accordion-section-title.active{border-bottom: 1px solid #ccc}
+
+.topPerformingListsWrap{padding: 15px 15px 0px 15px}
+.topPerformingListsWrap .card{padding: 10px}
+.topPerformingListsWrap .accordion-section-title.active{border-bottom: 1px solid #ccc}
 
 .audited {position: absolute; top: 0; right: 14px; padding: 0 5px; background-color:#70B76B; color: #fff; font-size: 12px;
     border-top-right-radius: 3px}
@@ -165,7 +171,17 @@ div#zclip-ZeroClipboardMovie_1{bottom:0 !important}
 .owlSlide h5{background: #a2a2a2;color: #fff;padding: 10px 5px;margin: 0; font-size: 15px; font-weight: 300}
 .owlSlide img{display: block; width: 100%;height: auto}
 
-.listTable th{font-size: 15px !important}
+.listTable th{font-size: 15px !important;padding-bottom: 12px !important}
+
+.listDetails h5{margin-bottom: 10px}
+.listCreatedOn{display: block;color: #555555}
+.listRating{display: block;color: #999999}
+
+.listStats{margin-top: 10px}
+.listSubs, .listOpens, .listClicks{display: block;margin-bottom: 6px;word-wrap:break-word;}
+.listLabel{display: block;color: #999999}
+
+.listStats .col-xs-4, .listStats .col-xs-6{padding-left: 0}
 @media not all and (min-width: 1250px){
     .card .statistics{font-size: 1.6em}
     .card .content{padding: 20px 5px 5px 5px}
