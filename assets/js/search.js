@@ -17,7 +17,7 @@
         if(filter) {
           // this finds all links in a list that contain the input,
           // and hide the ones not containing the input while showing the ones that do
-          
+
           $(list).find("h4:not(:Contains(" + filter + "))").closest('.col-md-2').hide();
           $(list).find("h4:Contains(" + filter + ")").closest('.col-md-2').show();
         } else {

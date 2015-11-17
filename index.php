@@ -188,8 +188,10 @@
                     
                     <div class="col-md-6">
                         <div class="card">
-                            <div class="content">                                
+                            <div class="header">
                                 <h4 class="title">Your Top Performing Campaigns</h4>
+                            </div>
+                            <div class="content">                                
                                 <div class="topPerformingCampaignWrap">
                                     <div class="card clearfix">
                                         <div class="listDetails clearfix">
