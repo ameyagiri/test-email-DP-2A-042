@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <link rel="icon" type="image/png" href="assets/img/favicon.ico">
+    <link rel="icon" type="image/png" href="../assets/img/favicon.ico">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
     <title>Email Zilla</title>
@@ -79,7 +79,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">Campaign Info</a>
+                    <a class="navbar-brand" href="#">Campaign</a>
                 </div>
                 <div class="collapse navbar-collapse">       
                     
@@ -137,10 +137,10 @@
 
     <div class="stepFooter">
         <ul>
-            <li><a href="campaignRecepients.php" class="stepLink active">Recepients</a></li>
+            <li><a href="campaignSetup.php" class="stepLink">Setup </a></li>
             <li><i class="fa fa-chevron-right"></i></li>
 
-            <li><a href="campaignSetup.php" class="stepLink">Setup </a></li>
+            <li><a href="campaignRecepients.php" class="stepLink active">List</a></li>
             <li><i class="fa fa-chevron-right"></i></li>
 
             <li><a href="creatives.php" class="stepLink">Template</a></li>
@@ -149,7 +149,7 @@
             <li><a href="#" class="stepLink">Design</a></li>
             <li><i class="fa fa-chevron-right"></i></li>
 
-            <li><a href="#" class="stepLink">Confirm</a></li>
+            <li><a href="campaignConfirm.php" class="stepLink">Confirm</a></li>
         </ul>
     </div> 
 </div>

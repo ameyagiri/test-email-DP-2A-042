@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <link rel="icon" type="image/png" href="assets/img/favicon.ico">
+    <link rel="icon" type="image/png" href="../assets/img/favicon.ico">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
     <title>Email Zilla</title>
@@ -21,6 +21,9 @@
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
     <link href="../assets/css/pe-icon-7-stroke.css" rel="stylesheet" />
     <link href="../assets/css/main.css" rel="stylesheet" />
+    
+    <link href="../assets/css/bootstrap-datetimepicker.min.css" rel="stylesheet" />
+    
 </head>
 <body> 
 
@@ -79,7 +82,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">Campaign Info</a>
+                    <a class="navbar-brand" href="#">Campaign</a>
                 </div>
                 <div class="collapse navbar-collapse">       
                     
@@ -103,7 +106,8 @@
                      
                      
         <div class="content">
-            <div class="container-fluid">    
+            <div class="container-fluid"> 
+            <form class="createCampaignForm" method="post">   
                 <div class="row">
                     <div class="col-md-6">
                         <div class="card">
@@ -111,15 +115,10 @@
                                 <h4 class="title">Campaign Details</h4>
                             </div>
                             <div class="content"> 
-                                <form class="createCampaignForm" method="post">
+                                
                                     <div class="posRel">
                                         <label>Name your campaign</label>
                                         <input type="text" name="campaignName" class="form-control"/>
-                                    </div>
-
-                                    <div class="posRel">
-                                        <label>Email subject</label>
-                                        <input type="text" name="emailSubject" class="form-control"/>
                                     </div>
 
                                     <div class="posRel">
@@ -131,23 +130,72 @@
                                         <label>From email address</label>
                                         <input type="text" name="fromEmailAddress" class="form-control"/>
                                     </div>
-                                </form>
+
+                                    <div class="posRel" id="sandbox-container">
+                                        <label>Campaign Start Date</label>
+                                        <div class='input-group date' id='datetimepicker1' name='campaignStartDate'>
+                                            <input type='text' class="form-control" />
+                                            <span class="input-group-addon">
+                                                <span class="glyphicon glyphicon-calendar"></span>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="posRel">
+                                        <label>Campaign End Date</label>
+                                        <div class='input-group date' id='datetimepicker2' name='campaignEndDate'>
+                                            <input type='text' class="form-control" />
+                                            <span class="input-group-addon">
+                                                <span class="glyphicon glyphicon-calendar"></span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="header">
+                                <h4 class="title">Email Subject</h4>
+                            </div>
+                            <div class="content">
+                                <div class="posRel">
+                                    <label>Email subject</label>
+                                    <input type="text" name="emailSubject" class="form-control"/>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="card">
+                            <div class="header">
+                                <h4 class="title">Domain</h4>
+                            </div>
+                            <div class="content"> 
+                                <div class="posRel">
+                                    <label>Domain Name</label>
+                                    <input type="text" name="campaignDomain" class="form-control"/>
+                                </div>
                             </div>
                         </div>
                     </div>   
 
                 </div>
+            </form>
             </div>    
         </div>
         
     </div>
 
-    <div class="stepFooter">
+    <div class="stepFooter clearfix">
+        
         <ul>
-            <li><a href="campaignRecepients.php" class="stepLink">Recepients</a></li>
+            <li><a href="campaignSetup.php" class="stepLink active">Setup </a></li>
             <li><i class="fa fa-chevron-right"></i></li>
 
-            <li><a href="campaignSetup.php" class="stepLink active">Setup </a></li>
+            <li><a href="campaignRecepients.php" class="stepLink">List</a></li>
             <li><i class="fa fa-chevron-right"></i></li>
 
             <li><a href="creatives.php" class="stepLink">Template</a></li>
@@ -156,7 +204,12 @@
             <li><a href="#" class="stepLink">Design</a></li>
             <li><i class="fa fa-chevron-right"></i></li>
 
-            <li><a href="#" class="stepLink">Confirm</a></li>
+            <li><a href="campaignConfirm.php" class="stepLink">Confirm</a></li>
+        </ul>
+
+        <ul class="stepNext">
+            <li><a href="campaignRecepients.php" class="stepLink">Next</a></li>
+            <li><i class="fa fa-chevron-right"></i></li>
         </ul>
     </div> 
 </div>
@@ -167,8 +220,16 @@
     <!--   Core JS Files   -->
     <script src="../assets/js/jquery-1.10.2.js" type="text/javascript"></script>
     <script src="../assets/js/bootstrap.min.js" type="text/javascript"></script>
-    
+    <script src="../assets/js/moment-with-locales.min.js" type="text/javascript"></script>
+    <script src="../assets/js/bootstrap-datetimepicker.min.js" type="text/javascript"></script>
+
     <script src="../assets/js/menu.js"></script>
     <script src="../assets/js/classie.js"></script>
-    
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $('#datetimepicker1').datetimepicker();
+        $('#datetimepicker2').datetimepicker();
+    });
+       
+    </script>
 </html>
