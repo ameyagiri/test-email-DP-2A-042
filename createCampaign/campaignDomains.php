@@ -1,7 +1,7 @@
 <?php 
-    $pagename="Domains";
-    $pagetitle="Domains";
-    include('includes/header.php'); 
+    $pagename="Campaigns";
+    $pagetitle="Campaigns";
+    include('../includes/innerHeader.php'); 
 ?>
 
 <div class="content">
@@ -119,47 +119,47 @@
 			</div>
 
 			<div class="col-md-4 viewSubDomainList hidethisdiv">
-				<div class="card">
-					<div class="header clearfix">
-						<h4 class="title">Selected Domains</h4>
-					</div>
-					<div class="content">
-						<div class="table-responsive">
+                <div class="card">
+                    <div class="header clearfix">
+                        <h4 class="title">Selected Domains</h4>
+                    </div>
+                    <div class="content">
+                        <div class="table-responsive">
                             <table class="table table-bordered">
                                 <thead>
                                     <th class="checkboxHead" id="th">
-                                    	<input type="checkbox" class="checkallsubdomains" name="checkallsubdomains1" id="checkallsubdomains1"/>
-                                		<label for="checkallsubdomains1"><span></span> </label>
-                                	</th>
+                                        <input type="checkbox" class="checkallsubdomains" name="checkallsubdomains1" id="checkallsubdomains1"/>
+                                        <label for="checkallsubdomains1"><span></span> </label>
+                                    </th>
                                     <th>www.recent1.com</th>
                                 </thead>
                                 <tbody class="subDomainList">
                                     <tr>
-                                    	<td>
-                                    		<input type="checkbox" name="check1subdomain1" id="check1subdomain1"/>
-                                    		<label for="check1subdomain1"><span></span> </label>
-                                    	</td>
+                                        <td>
+                                            <input type="checkbox" name="check1subdomain1" id="check1subdomain1"/>
+                                            <label for="check1subdomain1"><span></span> </label>
+                                        </td>
                                         <td>sub1.recent1.com</td>
                                     </tr>
                                     <tr>
-                                    	<td>
-                                    		<input type="checkbox" name="check1subdomain2" id="check1subdomain2"/>
-                                    		<label for="check1subdomain2"><span></span> </label>
-                                    	</td>
+                                        <td>
+                                            <input type="checkbox" name="check1subdomain2" id="check1subdomain2"/>
+                                            <label for="check1subdomain2"><span></span> </label>
+                                        </td>
                                         <td>sub2.recent1.com</td>
                                     </tr>
                                     <tr>
-                                    	<td>
-                                    		<input type="checkbox" name="check1subdomain3" id="check1subdomain3"/>
-                                    		<label for="check1subdomain3"><span></span> </label>
-                                    	</td>
+                                        <td>
+                                            <input type="checkbox" name="check1subdomain3" id="check1subdomain3"/>
+                                            <label for="check1subdomain3"><span></span> </label>
+                                        </td>
                                         <td>sub3.recent1.com</td>
                                     </tr>
                                     <tr>
-                                    	<td>
-                                    		<input type="checkbox" name="check1subdomain4" id="check1subdomain4"/>
-                                    		<label for="check1subdomain4"><span></span> </label>
-                                    	</td>
+                                        <td>
+                                            <input type="checkbox" name="check1subdomain4" id="check1subdomain4"/>
+                                            <label for="check1subdomain4"><span></span> </label>
+                                        </td>
                                         <td>sub4.recent1.com</td>
                                     </tr>
                                 </tbody>
@@ -207,11 +207,44 @@
                                 </tbody>
                             </table>
                         </div>
-					</div>
-				</div>
-			</div>
+                    </div>
+                </div>
+            </div>
 		</div>
 
+
+
+
+        <div class="stepFooter clearfix">
+            <ul class="stepPrev">
+                <li><i class="fa fa-chevron-left"></i></li>
+                <li><a href="campaignSetup.php" class="stepLink">Previous</a></li>
+            </ul>
+
+            <ul class="stepList">
+                <li><a href="campaignSetup.php" class="stepLink">Setup </a></li>
+                <li><i class="fa fa-chevron-right"></i></li>
+
+                <li><a href="campaignDomains.php" class="stepLink active">Domains </a></li>
+                <li><i class="fa fa-chevron-right"></i></li>
+
+                <li><a href="campaignRecepients.php" class="stepLink">Lists</a></li>
+                <li><i class="fa fa-chevron-right"></i></li>
+
+                <li><a href="campaignCreatives.php" class="stepLink">Template</a></li>
+                <li><i class="fa fa-chevron-right"></i></li>
+
+                <li><a href="campaignEditMailer.php" class="stepLink">Design</a></li>
+                <li><i class="fa fa-chevron-right"></i></li>
+
+                <li><a href="campaignConfirm.php" class="stepLink">Confirm</a></li>
+            </ul>
+
+            <ul class="stepNext">
+                <li><a href="campaignRecepients.php" class="stepLink">Next</a></li>
+                <li><i class="fa fa-chevron-right"></i></li>
+            </ul>
+        </div> 
 </div>
 
-<?php include('includes/footer.php'); ?>
+<?php include('../includes/innerFooter.php'); ?>

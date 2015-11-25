@@ -1,42 +1,46 @@
 </body>
 
     <!--   Core JS Files   -->
-    <script src="assets/js/jquery-1.10.2.js" type="text/javascript"></script>
-	<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="../assets/js/jquery-1.10.2.js" type="text/javascript"></script>
+	<script src="../assets/js/bootstrap.min.js" type="text/javascript"></script>
 
-    <script src="assets/js/menu.js"></script>
-    <script src="assets/js/classie.js"></script>
+    <script src="../assets/js/menu.js"></script>
+    <script src="../assets/js/classie.js"></script>
 
      <!--js color textbox script-->
-    <script type="text/javascript" src="assets/jscolor/jscolor.js"></script>
+    <script type="text/javascript" src="../assets/jscolor/jscolor.js"></script>
 
     <!--accordion script-->
-    <script src="assets/js/accordion.js"></script>
+    <script src="../assets/js/accordion.js"></script>
 
 	<!--editor script-->
-    <script type="text/javascript" src="assets/js/editorScript.js"></script>
+    <script type="text/javascript" src="../assets/js/editorScript.js"></script>
 
-	<script src="assets/js/highcharts.js" type="text/javascript"></script>
-    <script src="assets/js/charts.js" type="text/javascript"></script>
+	<script src="../assets/js/highcharts.js" type="text/javascript"></script>
+    <script src="../assets/js/charts.js" type="text/javascript"></script>
 
     <!--accordion script-->
-    <script src="assets/js/accordion.js"></script>
+    <script src="../assets/js/accordion.js"></script>
 
     <!--zero clipboard script-->
-    <script src="assets/zcb/jquery.zclip.js"></script>
+    <script src="../assets/zcb/jquery.zclip.js"></script>
 
     <!--owl carousel script-->
-    <script src="assets/owl/owl.carousel.js"></script>
-    <script src="assets/js/slider.js"></script>
+    <script src="../assets/owl/owl.carousel.js"></script>
+    <script src="../assets/js/slider.js"></script>
 
     <!--script for image creatives search-->
-    <script src="assets/js/search.js"></script>
+    <script src="../assets/js/search.js"></script>
 
     <!--script for text creatives search-->
-    <script src="assets/js/search2.js"></script>
+    <script src="../assets/js/search2.js"></script>
 
 	<!--bootstrap select with search script-->
-	<script src="assets/js/bootstrap-select.min.js" type="text/javascript"></script>
+	<script src="../assets/js/bootstrap-select.min.js" type="text/javascript"></script>
+
+    <!--Date picker script-->
+    <script src="../assets/js/moment-with-locales.min.js" type="text/javascript"></script>
+    <script src="../assets/js/bootstrap-datetimepicker.min.js" type="text/javascript"></script>
 
     <script type="text/javascript">
         $(document).ready(function(){
@@ -97,10 +101,13 @@
                 $(this).closest('table').find(".subDomainList input[type='checkbox']").prop('checked', $(this).prop("checked"));
             });
 
+
 		  	$('#addDomainsBtn').click(function(){
 		  		$('.addDomainFormWrapper').css({'display':'block'});
 		  	});
 
+            $('#datetimepicker1').datetimepicker();
+            $('#datetimepicker2').datetimepicker();
         });
     </script>
 </html>
